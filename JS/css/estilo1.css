@@ -1,0 +1,51 @@
+
+body{ 
+    width: 847px; height: 100vh; 
+    background: #5a5bf3; 
+    background: -moz-linear-gradient(left, #5a5bf3 0%, #91e7d9 100%);
+    background: -webkit-linear-gradient(left, #5a5bf3 0%,#91e7d9 100%);
+     background: linear-gradient(to right, #5a5bf3 0%,#91e7d9 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5bf3', endColorstr='#91e7d9',GradientType=1 ); 
+    justify-content: center
+    }
+
+.title{
+    color: #fff;
+
+}
+form{
+    color: #fff;
+}
+
+.contenedor p{
+    color: #fff;
+
+}
+.problema2{
+    color: #fff;
+}
+.problema3{
+    color: #fff;
+}
+.problema4{
+    color: #fff;
+}
+.problema5{
+    color: #fff;
+}
+.problema6{
+    color: #fff;
+}
+.problema7{
+    color: #fff;
+}
+.problema8{
+    color: #fff;
+}
+.problema9{
+    color: #fff;
+    
+}
+.problema-container{
+    color: #fff;
+}

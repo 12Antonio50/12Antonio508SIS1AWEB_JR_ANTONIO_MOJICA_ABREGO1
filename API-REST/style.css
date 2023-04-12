@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cat{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 150px;
+    background: linear-gradient(
+    to left,
+    cyan 25%,
+    red 25%,
+    red 50%,
+    lime 50%,
+    lime 75%,
+    yellow 75%
+  );
+  background: linear-gradient(
+    to left,
+    
+    cyan 25%,
+    red 25% 50%,
+    lime 50% 75%,
+    yellow 75%,
+  );
+  border: 5px black solid;
+}
+
+.catalogo{
+    color: #FFFFFF;
+}
+
+h1{
+  text-align: center;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+.image-container{
+  display: block;
+}
+
+.image-container img{
+  width: 100%;
+}
+
+article {
+  padding: 50px;
+  box-shadow: 0px 0px 1px #000;
+}

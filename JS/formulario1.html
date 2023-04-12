@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacion1.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="title">Problema 1</h1>
+        <p>
+            Un vendedor recibe un sueldo base mas un  10% extra por comisión de sus ventas, el 
+            vendedor desea saber cuanto dinero obtendrá por concepto de comisiones por las tres
+            ventas que realiza en el mes y total que recibiá en el mes tomando en cuenta su sueldo
+            base y comisiones.
+        </p>
+        <br>
+        <form method="post" name="formulario" onsubmit="return validar (this)">
+            <br>
+            <label class="label">Venta 1 </label>
+            <br>
+            <input type="number" name="venta1" id="venta1" 
+            class="input-venta1">
+            <br>
+            <label class="label">Venta 2</label>
+            <br>
+            <input type="number" name="venta2" id="venta2"
+            class="input-venta2">
+            <br>
+            <label class="label">Venta 3</label>
+            <br>
+            <input type="number" name="venta3" id="venta3"
+            class="input-venta3">
+            <br>
+            <br>
+            <input type="button" value="Calcular" onclick="calcular()" >
+            <input type="reset" name="Borrar" value="Borrar datos">
+        </form>
+
+
+        <div class="problema2">
+            <div class="desc">
+                <br>
+                <br>
+                <h1>Problema 2</h1>
+                <p>
+                    
+                    Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente desea saber cuanto deberá pagar finalmente por su compra
+                </p>
+            </div>
+            <form method="post" name="formulario2">
+                <br>
+                <br>
+                <label class="label">Precio del producto</label>
+                <br>
+                <input type="number" name="precio" id="precio" 
+                class="input-precio">
+                <br>
+                <input type="button" value="Calcular" onclick="pregunta2()" >
+                <input type="reset" name="Borrar" value="Borrar datos">
+            </form>
+            
+        </div>
+
+        <div class="problema3">
+            <div class="descripcion">
+                <br>
+                <br>
+                <h1>Problema 3</h1>
+                <p>Un alumno desea saber cual será su calificación final en la metaria de Algoritmos.
+                    Dicha calificación se compone de los siguentes porcentajes: 
+                    55% del promedio de sus calificaciones parciales.
+                    <br>
+                    30% de la calificación del examen final.
+                    <br>
+                     15% de la calificación de un trabajo final.</p> 
+                </p>
+            </div>
+            <form method="post" name="formulario3">
+                <br>
+                <br>
+                <label class="label">Calificación promedio de los tres parciales</label>
+                <br>
+                <input type="number" name="promediocali" id="promediocali" 
+                class="input-promediocali">
+                <br>
+                <label class="label">Calificación del examen</label>
+                <br>
+                <input type="number" name="examen" id="examen" 
+                class="input-examen">
+                <br>
+                <label class="label">Trbajo final</label>
+                <br>
+                <input type="number" name="trabajo-final" id="trabajo-final" 
+                class="input-examen">
+                <br>
+                <input type="button" value="Calcular" onclick="pregunta3()" >
+                <input type="reset" name="Borrar" value="Borrar datos">
+            </form>
+
+            <div class="problema4">
+                <div class="descripcion"></div>
+                <br>
+                <br>
+                <h1>Problema 4</h1>
+                <p>Un maestro desea saber que porcentaje de hombres y que porsentaje de mujeres hay en un grupo de estudiantes. </p>
+            </div>
+            <form method="post" name="formulario4">
+                <br>
+                <br>
+                <label class="label">Número de hombres</label>
+                <br>
+                <input type="number" name="Nhombres" id="Nhombres" 
+                class="input-hombres">
+                <br>
+                <label class="label">Número de mujeres</label>
+                <br>
+                <input type="number" name="Nmujeres" id="Nmujeres" 
+                class="input-mujeres">
+                <br>
+                <input type="button" value="Calcular" onclick="pregunta4()" >
+                <input type="reset" name="Borrar" value="Borrar datos">
+            </form>
+
+            <div class="pregunta5">
+                <div class="descripcion">
+                    <br>
+                    <br>
+                    <h1>Pregunta 5</h1>
+                    <p>Realiza el algoritmo que calcule la edad de una persona.</p>
+                     <form method="post" name="formulario5">
+                        <br>
+                        <br>
+                        <label class="label">Ingresa tu año de nacimiento</label>
+                        <br>
+                        <input type="number" name="aN" id="aN" 
+                        class="input-aN">
+                        <br>
+                        <input type="button" value="Calcular" onclick="pregunta5()" >
+                        <input type="reset" name="Borrar" value="Borrar datos">
+                     </form>
+                </div>
+            </div>
+
+            <div class="pregunta6">
+                <div class="descripcion">
+                    <br>
+                    <br>
+                    <h1>Pregunta 6</h1>
+                    <p>Leer 2 números; si son iguales que los multiplique, si el primero es mayor que el segundo que los reste y si no que los sume</p>
+                    <br>
+                    <br>
+                    <form method="post" name="formulario6">
+                        <label class="label">Ingresa un número</label>
+                        <br>
+                        <input type="number" name="num1" id="num1" 
+                        class="input-num1">
+                        <br>
+                        <label class="label">Ingresa otro número</label>
+                        <br>
+                        <input type="number" name="num2" id="num2" 
+                        class="input-num2">
+                        <br>
+                        <input type="button" value="Calcular" onclick="pregunta6()" >
+                        <input type="reset" name="Borrar" value="Borrar datos">
+                    </form>
+                </div>
+
+                <div class="pregunta7">
+                    <div class="descripcion">
+                        <br>
+                        <br>
+                        <h1>Pregunta 7</h1>
+                        <p>Leer tres números diferentes e imprimir el numero mayor de los tres</p>
+                        <br>
+                        <br>
+                        <form method="post" name="formulario7">
+                            <label class="label">Ingresa un número</label>
+                            <br>
+                            <input type="number" name="nume1" id="nume1" 
+                            class="input-num1">
+                            <br>
+                            <label class="label">Ingresa otro número</label>
+                            <br>
+                            <input type="number" name="nume2" id="nume2" 
+                            class="input-num2">
+                            <br>
+                            <label class="label">Ingresa otro número</label>
+                            <br>
+                            <input type="number" name="nume3" id="nume3" 
+                            class="input-num3">
+                            <br>
+                            <input type="button" value="Calcular" onclick="preguntas7()" >
+                            <input type="reset" name="Borrar" value="Borrar datos">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pregunta8">
+                <div class="descripcion">
+                    <br>
+                    <br>
+                    <h1>Pregunta 8</h1>
+                    <p>Determinar la cantidad de dinero que resibirá un trabajador por concepto de las horas extras
+                       trabajadas en una empresa, sabiendo que las horas de trabajo exeden de 40, el resto se 
+                       concideran horas extras y que estas se pagan al doble de una hora normal cunado no exeden de 
+                       8; si las horas extras exeden de 8 se pagan las primeras 8 al doble de los que se pagan las horas
+                       normales y el resto al triple.
+                    </p>
+                    <form method="post" name="formulario8">
+                        <br>
+                        <br>
+                        <label class="label">¿Cuánto le pagan la hora laboral?</label>
+                        <br>
+                        <input type="number" name="pago" id="pago" 
+                        class="input-pago">
+                        <br>
+                        <label class="label">¿Cuantas horas laboro?</label>
+                        <br>
+                        <input type="number" name="time" id="time" 
+                        class="input-time">
+                        <br>
+                        <input type="button" value="Calcular" onclick="pregunta8()" >
+                        <input type="reset" name="Borrar" value="Borrar datos">
+                    </form>
+                    </form>
+
+                        
+                </div>
+            </div>
+
+            <div class="pregunta9">
+                <div class="descripcion">
+                    <br>
+                    <br>
+                    <h1>Pregunta 9</h1>
+                    <p>
+                        Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asigna
+                        como un porcentaje de su salario mensual que depende de su antiguedad en la empresa de acuerdo con la
+                        siguiente tabla
+                        Tiempo:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Menos de un año</th>
+                            <th> Utilidad</th>
+                        </tr>
+                        <tr>
+                            <td>1 año o más y menos de 2 años</td>
+                            <td>5% del salario</td>
+                        </tr>
+                        <tr>
+                            <td>2 años o más y menos de 5 años</td>
+                            <td> 7% del salario</td>
+                        </tr>
+                        <tr>
+                            <td>5 años o más y menos de 5 años</td>
+                            <td> 15% del salario</td>
+                        </tr>
+                        <tr>
+                            <td> 10 años o más</td>
+                            <td> 20% del salario</td>
+                        </tr>
+                    </table>
+                </div>
+                <form method="post" name="formulario9">
+                    <label class="label">Ingresar antiguedad laboral  en meses</label>
+                    <br>
+                    <input type="number" name="mes" id="mes" 
+                    class="input-mes">
+                    <br>
+                    <label class="label">Ingresar salario</label>
+                    <br>
+                    <input type="number" name="paga" id="paga" 
+                    class="input-paga">
+                    <br>
+                    <input type="button" value="Calcular" onclick="pregunta9()" >
+                    <input type="reset" name="Borrar" value="Borrar datos">
+                </form>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
